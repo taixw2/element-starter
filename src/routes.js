@@ -2,14 +2,12 @@ module.exports = [
 
     {
       path : "/",
+      redirect : "/home"
+    },
+    {
+      path : "/home",
       name : "Index",
-      children : [
-        {
-          path : "/",
-          name : "home",
-          component : require("./view/Home.vue")
-        }
-      ]
+      component : require("./view/Home.vue")
     }
 
 ]
