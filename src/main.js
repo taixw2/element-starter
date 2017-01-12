@@ -1,12 +1,19 @@
-import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
-import App from './App.vue'
-import VueResource from 'vue-resource';
-import VueRouter from 'vue-router'
-import routes from './routes'
+import Vue from 'vue';
+import ElementUI from 'element-ui';
 
-Vue.use(ElementUI)
+//使用element-thin-ui
+//https://taixw2.github.io/element-ui/index.html#/form
+import 'element-ui/lib/theme-default/index.css';
+
+//使用element-ui
+//import 'element-ui/lib/theme-default/index.css';
+
+import App from './App.vue';
+import VueResource from 'vue-resource';
+import VueRouter from 'vue-router';
+import routes from './routes';
+
+Vue.use(ElementUI);
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
