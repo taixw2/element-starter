@@ -29,15 +29,18 @@ var router = new VueRouter({
     }
 });
 
+Vue.http.options.root = "/api";
+Vue.http.interceptors.push((request,next)=>{
+    next(response=>{
+
+      return true;
+    });
+});
 
 const app = new Vue({
     el: "#app",
     router,
     http: {
-        root: '/api',
-        headers: {
-            // Authorization: 'Basic YXBpOnBhc3N3b3Jk'
-        },
         options : {
           emulateJSON  :  true
         }
